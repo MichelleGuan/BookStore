@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    -ms-overflow-style: scrollbar;
+}
+#header{
+    height: 26px;
+    background-color: #f2f2f2;
+    color: #727272;
+    line-height: 26px;
+    text-align: right;
+    padding-right: 10px;
+}
+#header #welcome{
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+}
+#booklog{
+    margin-top: -2px;
+    margin-right: 2px;
+}
+#librarylog{
+    margin-top: 20px;
+}
+#search1{
+    width: 300px;
+    height: 35px;
+}
+#search2{
+    width: 80px;
+    background-color: #f05a24;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+#search{
+    margin-top: 38px;
+}
+#searchme:focus{
+    box-shadow: none;
+    border-color: #ec971f;
+}
+#search3{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width:320px;
+
+}
+#search3 a{
+    text-decoration: none;
+    color: #848484;
+}
+#search3 a:visited{
+    text-decoration: none;
+    color: #848484;
+}
+#search3 a:hover{
+    text-decoration: none;
+    color: #ffb54d;
+}
+#renew:hover{
+    color: #848484;
+}
+#search3 li{
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding-left: 6px;
+    padding-right:6px;
+    color: #848484;
+}
+.picture {
+    margin: 30px auto;
+    position: relative;
+    width: 1110px;
+    height: 475px;
+}
+
+#page{
+    height: 520px;
+    width: 1020px;
+    position: absolute;
+    left: 0;
+}
+
+.list li {
+    float: left;
+    display: block;
+    font: 15px arial, sans-serif;
+    color: #370f11;
+    padding-right: 5px;
+    line-height: 30px;
+    position: relative;
+}
+
+.animationCat {
+    position: relative;
+    width: 1010px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.list {
+    list-style: none;
+    position: absolute;
+    right: 200px;
+    height: 30px;
+    width: 600px;
+    padding-left: 160px;
+    background-image:url(image/pinkline.jpg);
+}
+.book-img{
+    position: relative;
+    display: inline-block;
+}
+
+.list p {
+    margin-top: 5px;
+    display: block;
+    background-color: #f6b9e1;
+    line-height: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.active p {
+    background-color: #f8d3de;
+    line-height: 25px;
+    margin-top: 3px;
+    width: 70px;
+    padding-left: 4px;
+    font-weight: bold;
+}
+.price{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+    background-color: white;
+}
+#page .price{
+    border-top:solid #dc3d8d 1px;
+}
+.list img {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: -10;
+}
+#page li {
+    border: solid #dc3d8d 1px ;
+    float: left;
+}
+#miao {
+    position: absolute;
+    margin-left: 930px;
+    z-index: 20;
+    opacity: 0;
+}
+
+#cat {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    opacity: 0;
+    z-index: -10;
+}
+#page li p{
+    margin-left: 18px;
+    display: inline-block;
+    text-decoration: line-through;
+    color: #5e5e5e;
+}
+.showArea li {
+    border: solid #5db0dc 1px;
+    float: left;
+}
+.showArea .price{
+    border-top:solid #5db0dc 1px;
+}
+.showArea{
+    margin: 0 auto;
+   width: 1010px;
+    text-align: center;
+}
+.showArea #separate{
+    margin-left: -50px;
+}
+#guide{
+    right: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -160px;
+}
+.row{
+    height: 150px;
+}
+#guide:hover{
+    cursor: pointer;
+    border: solid red 1px;
+}
+#nav{
+    width: 550px;
+    vertical-align: bottom;
+    padding-top: 60px;
+    padding-bottom: 240px;
+   float: right;
+}
+#nav nav{
+margin-top: -25px;
+}
+#show img{
+    width: 200px;
+    height: 220px;
+}
+#page img{
+    width: 200px;
+    height: 220px;
+}

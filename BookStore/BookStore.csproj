@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{522E616B-EFCD-4F5A-A743-CE889FE03930}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookStore</RootNamespace>
+    <AssemblyName>BookStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="data\Login.ashx" />
+    <Content Include="data\register.ashx" />
+    <Content Include="html\quote\bootstrap-theme.css.map" />
+    <Content Include="html\quote\bootstrap-theme.min.css.map" />
+    <Content Include="html\quote\bootstrap.css.map" />
+    <Content Include="html\quote\bootstrap.min.css.map" />
+    <Content Include="entity\text.dat" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="html\detail-library.css" />
+    <Content Include="html\detail-library.js" />
+    <Content Include="html\detail.html" />
+    <Content Include="html\image\AI.png" />
+    <Content Include="html\image\animatebook.png" />
+    <Content Include="html\image\art1.png" />
+    <Content Include="html\image\art10.png" />
+    <Content Include="html\image\art2.png" />
+    <Content Include="html\image\art3.png" />
+    <Content Include="html\image\art4.png" />
+    <Content Include="html\image\art5.png" />
+    <Content Include="html\image\art6.png" />
+    <Content Include="html\image\art7.png" />
+    <Content Include="html\image\art8.png" />
+    <Content Include="html\image\art9.png" />
+    <Content Include="html\image\booklog.png" />
+    <Content Include="html\image\catcol.png" />
+    <Content Include="html\image\cat_ear.png" />
+    <Content Include="html\image\follow.png" />
+    <Content Include="html\image\librarylog.png" />
+    <Content Include="html\image\life1.png" />
+    <Content Include="html\image\life10.png" />
+    <Content Include="html\image\life2.png" />
+    <Content Include="html\image\life3.png" />
+    <Content Include="html\image\life4.png" />
+    <Content Include="html\image\life5.png" />
+    <Content Include="html\image\life6.png" />
+    <Content Include="html\image\life7.png" />
+    <Content Include="html\image\life8.png" />
+    <Content Include="html\image\life9.png" />
+    <Content Include="html\image\pinkline.jpg" />
+    <Content Include="html\image\readseparate.png" />
+    <Content Include="html\image\register-background.jpg" />
+    <Content Include="html\image\right-star.png" />
+    <Content Include="html\image\science1.png" />
+    <Content Include="html\image\science10.png" />
+    <Content Include="html\image\science2.png" />
+    <Content Include="html\image\science3.png" />
+    <Content Include="html\image\science4.png" />
+    <Content Include="html\image\science5.png" />
+    <Content Include="html\image\science6.png" />
+    <Content Include="html\image\science7.png" />
+    <Content Include="html\image\science8.png" />
+    <Content Include="html\image\science9.png" />
+    <Content Include="html\image\seperate.png" />
+    <Content Include="html\image\star_hollow_hover%402x.png" />
+    <Content Include="html\image\star_onmouseover%402x.png" />
+    <Content Include="html\login-library.css" />
+    <Content Include="html\login-library.js" />
+    <Content Include="html\login.html" />
+    <Content Include="html\lostPassword-library.css" />
+    <Content Include="html\lostPassword-library.js" />
+    <Content Include="html\lostPassword.html" />
+    <Content Include="html\quote\bootstrap-theme.css" />
+    <Content Include="html\quote\bootstrap-theme.min.css" />
+    <Content Include="html\quote\bootstrap.css" />
+    <Content Include="html\quote\bootstrap.js" />
+    <Content Include="html\quote\bootstrap.min.css" />
+    <Content Include="html\quote\bootstrap.min.js" />
+    <Content Include="html\quote\jquery-3.2.1.min.js" />
+    <Content Include="html\quote\npm.js" />
+    <Content Include="html\quote\vue-resource.js" />
+    <Content Include="html\quote\vue.js" />
+    <Content Include="html\register-library.css" />
+    <Content Include="html\register-library.js" />
+    <Content Include="html\register.html" />
+    <Content Include="html\searching-library.css" />
+    <Content Include="html\searching-library.js" />
+    <Content Include="html\searching.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="data\register.ashx.cs">
+      <DependentUpon>register.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="entity\PathConfig.cs" />
+    <Compile Include="entity\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51755</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51755/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

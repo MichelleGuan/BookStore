@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="gb2312">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <title>注册图书馆账号</title>
+        <link rel="stylesheet" href="quote/bootstrap.css">
+        <script src="quote/jquery-3.2.1.min.js"></script>
+        <script src="quote/bootstrap.js"></script>
+        <script src="quote/vue.js"></script>
+        <script src="quote/vue-resource.js"></script>
+        <link rel="stylesheet" href="register-library.css">
+        <script src="register-library.js" language="javascript" type="text/javascript" charset="gb2312"></script>
+    </head>
+<body>
+    <div class="container" id="container">
+        <fieldset>
+            <div class="col-md-12 text-center" id="picture">
+                <img src="image/librarylog.png" height="100" width="250" />
+            </div>
+            <form class="form-horizontal"> 
+                <div class="form-group">
+                    <label for="inputUsername" class="col-md-3 control-label">用户名</label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputUsername" placeholder="请输入4到12位英文用户名"  v-model="username" v-on:mouseout="textUN" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-md-3 control-label" v-model="email">邮箱</label>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="请输入您的邮箱地址" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone" class="col-md-3 control-label" v-model="phone">电话</label>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="请输入您的手机号码" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-md-3 control-label">密码</label>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" id="inputPassword" v-model="password"  v-on:mouseout="textPW" placeholder="请输入6位数字密码" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" class="col-md-3 control-label">确认密码</label>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" id="confirmPassword" v-model="passwordVerify" v-on:mouseout="verifyPW" placeholder="请再次输入您的6位数字密码" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-md-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" required id="confirm" disabled> 同意本网站的<a data-toggle="modal" data-target="#layer1">隐私政策</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-6">
+                        <button class="btn btn-default" id="confirm" v-on:click="submit()">确认注册</button>
+                        <a href="login.html"><button type="button" class="btn btn-default">返回登录界面</button></a>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+        <div role="dialog" class="modal" id="layer1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">隐私政策</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p> 我们可能将在向您提供服务的过程之中所收集的信息用作下列用途：</p>
+                        <ul>
+                            <li>向您提供服务；</li>
+                            <li> 在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</li>
+                            <li>帮助我们设计新服务，改善我们现有服务；</li>
+                            <li>使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他用户作出其他方面的回应；</li>
+                            <li> 向您提供与您更加相关的广告以替代普遍投放的广告；</li>
+                            <li>评估我们服务中的广告和其他促销及推广活动的效果，并加以改善；</li>
+                            <li>软件认证或管理软件升级；</li>
+                            <li> 让您参与有关我们产品和服务的调查。</li>
+                            <li>
+                                为了让您有更好的体验、改善我们的服务或您同意的其他用途，在符合相关法律法规的前提下，我们可能将通过某一项服务所收集的信息，以汇集信息或者个性化的方式，用于我们的其他服务。例如，在您使用我们的一项服务时所收集的信息，可能在另一服务中用于向您提供特定内容，
+                                或向您展示与您相关的、非普遍推送的信息。如果我们在相关服务中提供了相应选项，您也可以授权我们将该服务所提供和储存的信息用于我们的其他服务。
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-sm" data-dismiss="modal" v-on:click="confirm">确认</button>
+                            <button class="btn btn-primary btn-sm" data-dismiss="modal" v-on:click="read">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

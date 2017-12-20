@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    height:667px;
+    background-image:url("image/register-background.jpg");
+   margin-top: 30px;
+}
+
+#login{
+    height:400px;
+    width:400px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 50px auto;
+    box-shadow:3px 5px 10px #0050cc;
+    text-align: center;
+    padding-top: 60px;
+    white-space: nowrap;
+}
+h1{
+    display: inline-block;
+    font-size: 40px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(0, 170, 204, 1)), to(rgba(0, 30,204, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+    font-size: 20px;
+}
+label{
+    font-size: larger;
+
+}
+input{
+    margin-top: 10px;
+    width: 200px;
+
+}
+#submit{
+    margin-top: 20px;
+    margin-left: 6px;
+}
+span{
+    display: inline-block;
+    margin-top: 15px;
+}
+a{
+    font-size: 10px;
+  text-decoration: none;
+    color: dimgray;
+}
+a:hover{
+    text-decoration: none;
+}
+input:hover{
+    box-shadow:-1px -1px 2px #0050cc inset;
+}
